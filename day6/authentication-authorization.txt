@@ -1,0 +1,42 @@
+AUTHENTICATION & AUTHORIZATION
+- Authentication is the verification of who you are
+- Authorization is the verification of what you have the right to do
+Example: You've gone to a concert. At the front door, the security guard asks to see your ticket and your ID in order to verify that the name on your ID matches the name on your ticket. This is authentication. You then give your ticket to the security guard who only allows you to pass into General Admissions (instead of the VIP section). This is authorization.
+
+- Different Authentication Methods
+There are many different kinds of authentication, the most common of which is a password. However, the PIN number you enter when you withdraw money from an ATM, the fingerprint or face ID you use to unlock your phone, and personal information such as your phone number, social security number, or address are all forms of authentication.
+
+- Single-Factor Authentication
+Single-Factor authentication refers to when only one form of authentication is used. When you log in to a webpage using only a username and password and are granted access, that is single-factor authentication. Unfortunately, due to evolving threats against common methods of single-factor authentication, this method is becoming increasingly insecure.
+
+- Threats to Single-Factor Authentication
+In fact, with some studies suggesting that 80% of data breaches in 2019 were caused by password compromise, it’s clear that passwords are not a sufficient means of securing systems.
+
+- Multi-Factor Authentication
+Multi-Factor Authentication (MFA) is the use of multiple types of authentication in order to access a single resource. The most common form of Multi-Factor Authentication is Two-Factor Authentication (2FA). If you log into your bank’s website with a username and password, and then receive a text message with a One-Time Passcode (OTP) that you also need to enter to gain access to your bank account. That is an example of 2FA (and MFA).
+
+Many organizations utilize app-based codes, instead of sending an OTP in a text message. An even more secure method is to use a physical security key, such as the Yubikey, which can connect to the USB and Lightning ports on a phone or computer.
+
+With Single-Factor Authentication, all an attacker needs is your password or PIN. But with MFA, the attacker would need both your password and access to your cell phone or email to receive a passcode, something they are far less likely to have.
+
+Nevertheless, MFA is still vulnerable to certain kinds of attacks such as SIM Swapping, a social engineering attack in which an attacker remotely steals a victim’s telephone number to receive a text-based OTP. App-based codes are secure against sim swapping, but vulnerable to certain types of mobile malware that can infect your phone and steal these codes.
+
+HOW DOES A WEBSITE GIVE ME ACCESS AFTER I LOG IN?
+When the user enters their username and password on a website and hits “Submit”, what happens? Your web browser submits that information to the server’s API to authenticate you. An API is the part of a server that sends and receives data. There are three main types of API authentication:
+- HTTP Basic Auth
+HTTP Basic Auth is the oldest (since 1999) and simplest method of authentication. It simply requires you to send your username and password every time you communicate with the web page. The reason this isn’t necessary when you use your browser is because of something called cookies. Cookies store your credentials so that you don’t need to send them every time you click on a button.
+
+- API Keys
+API Keys are similar to HTTP Basic Auth except, instead of a username and password, you use something called an API token, a unique string of letters and numbers generated for each user. For example, you can use them to authenticate a script that queries a website for large amounts of data or to authenticate a bot on Discord. API Keys have the added advantage of being long and difficult to guess.
+
+Unfortunately, API Keys are too long and complex to be practical for everyday users to use them to log in, and like the credentials used in HTTP Basic Auth, they are vulnerable to interception when they are submitted for authentication.
+
+- OAuth
+Sometimes we don’t even have to create a username and password for a new account. Instead, we can sign in with Google, LinkedIn, Twitter, and more. This is possible because of OAuth.
+
+OAuth tokens are great at defending users against data breaches since they eliminate the need to store passwords. However, OAuth is still vulnerable to attacks. Imagine that an attacker sets up a malicious website and tells users that they must authenticate with OAuth through GitHub. Instead of asking for just an email, the website asks for access to private repositories and secret gists! If a user grants this access to the malicious application, the attacker would have access to all of the user’s private information on Github — without ever knowing their password!
+
+ROLE-BASED ACCESS CONTROL
+Role-based access is exactly what it sounds like: you have permissions to access certain things (authorization) based on your role/responsibilities (authentication). For example, a professor and a student may both have access to enter the same university. However, the student may have access to the dorms whereas the professor does not, and the professor may have access to the faculty offices whereas the student does not.
+
+Implementation is similar in a web application. For example, in an online forum users may be forum guests, members, or administrators. Guests may only have permission to view posts, members to view and create posts, and administrators to view, create, and delete posts.

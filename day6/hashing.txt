@@ -1,0 +1,14 @@
+PRACTICAL CRYPTOGRAPHY: HASHING
+- Learn about hashing and its practical applications!
+In addition to using cryptography to keep things secret, you can also use cryptography to make sure your data matches what you expect. This is where hashing comes in.
+
+Hashing does not encrypt data. Instead, hashing is a one-way process that takes a piece of data of any size and uses a mathematical function to represent that data with a unique hash value of a fixed size. You cannot compute the original data from its hash.
+
+Because each hash should be unique, hashing allows us to see if changes have been made to documents. For example, if you wanted to know whether a website had changed, you could download the CSS and HTML files, hash them, and then see if you get the same value when you hash them later. If the value is different the second time, something on the website changed. Hashing provides a fast, reliable way to compare files and verify their authenticity.
+
+Ideally, hash functions always generate unique values for different inputs. When they don’t it’s called a hash collision. While it’s hypothetically possible to encounter a hash collision with nearly any hashing algorithm, with modern algorithms like SHA-256, it would take so long to result in a collision that it’s functionally impossible. Earlier hashing algorithms, like MD5 and SHA-1, are more likely to result in hash collisions.
+
+- Using Hashes to Protect Data
+Hashes are widely used in order to store passwords in online databases. If they are stored as hash values, even if someone hacks into a website’s database, only the password hashes are exposed.
+
+Organizations can further protect hashed information by using something called a salt. A salt is a secret random string that is combined with a password prior to hashing specifically to defend against the use of rainbow tables.

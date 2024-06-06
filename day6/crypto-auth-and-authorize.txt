@@ -1,0 +1,36 @@
+CRYPTOGRAPHY, AUTHENTICATION & AUTHORIZATION
+Cryptography is used almost everywhere online. The https that comes before many domain names indicate that encryption is being used to exchange data between your browser and the server. Cryptography protects your data and keep it private.
+
+- Encryption & Decryption: Plain Text -> Encrypted Text -> Plain Text
+- Hashing Algorithm: Plain Text -> Hash Function -> Hashed Text
+
+- Authentication, Authorization, Non-Repudiation
+Authentication and authorization go hand in hand. Users must be authenticated before carrying out the activity they are authorized to perform. Security is strong when the means of authentication cannot later be refuted—the user cannot later deny that [they] performed the activity. This is known as non-repudiation.
+
+- Practical Cryptography: Encryption
+Cryptography is the science of hiding data and making it available again. Hiding data is called encryption and unhiding it is called decryption. 
+
+One of the earliest well-known instances of cryptography was the use of coded messages between Julius Caesar and his military generals during Roman times. This is called the Caesar Cipher.
+
+- How Do Computers Encrypt?
+The XOR operation, a key component of many complex algorithms used today, such as AES, the encryption algorithm used by the US government to protect classified information.
+
+XOR is an operation that compares two bits and returns True (1) if only one of the bits is 1, and returns False (0), if the bits are the same value (both 0’s or both 1’s). XOR gives the same string back if you perform XOR on it twice. For example, if you XOR 1100 with the key 1001, it returns 0101, and if you XOR 0101 with the same key, 1001, you get 1100 again.
+
+- Types of Encryption
+There are two main types of encryption: symmetric and asymmetric.
+- Symmetric encryption uses the same key to both encrypt and decrypt data.
+- Asymmetric encryption uses two different keys to encrypt and decrypt data.
+
+- Symmetric Encryption
+Symmetric encryption is the fastest way to encrypt data, and the most common for sending large chunks of data, however, it has one major vulnerability: if you send someone your key, then it’s in a form that any other person can read. That means your data is vulnerable to being stolen. 
+
+- Asymmetric Encryption
+Asymmetric encryption differs from symmetric encryption in one way: Instead of one key, you have a key pair. A key pair is made up of a public key and a private key.
+- The public key can be given to anyone and is only used to encrypt data. 
+- The private key is kept secret and is only used to decrypt data.
+
+For example, if you want to receive an encrypted message from someone, you would first generate a key pair and give them the public key. Then, they would write a message and encrypt it using the public key you gave them. Finally, they would send you the message and you would decrypt it with your private key. You never share your private key with anyone, including the recipient, so it never has a chance to be stolen. Having two keys makes sure you are the only person who can decrypt and read those messages since you are the only one with the private key.
+
+Asymmetric encryption is the most secure way to transmit data; however, it is slower and more complex than symmetric encryption. Therefore, it is primarily used to exchange smaller pieces of data.
+

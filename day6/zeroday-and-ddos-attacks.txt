@@ -1,0 +1,26 @@
+ZERO-DAY
+0-day vulnerabilities is a newly-discovered software bug that a developer was not aware of before the software was released. Therefore, after it is discovered, the developer has "zero" days to patch it before it can be exploited. When a “zero-day attack” occurs, the vulnerability quickly becomes known and is patched by the developer. Real example of Zero-Day was a malware referred to as Stuxnet was used to attack Iran's nuclear program.
+
+Because zero-days are difficult to discover and exploit, they are more often leveraged by nation-state actors, who have the resources and infrastructure to find and exploit these vulnerabilities.
+
+- FINDING & CLASSIFYING VULNERABILITIES
+The vast majority of cyber attacks exploit existing vulnerabilities. These vulnerabilities are catalogued and numbered as CVEs, or “Common Vulnerabilities and Exposures” and are maintained in places like the Mitre Corporation’s database or the National Vulnerability Database (NVD).
+
+Thousands of CVEs are recorded every year and are typically found first by either security companies or researchers participating in companies’ bug bounty programs. Bug bounty programs offer money (a bounty) to anyone able to find a vulnerability in their systems.
+
+DDoS (DISTRIBUTED DENIAL of SERVICE)
+A DDoS attack is when an attacker attempts to make a resource, such as a website's various servers, go offline by overwhelming it with web traffic. It is similar to trying to drive during rush hour: the more cars there are, the slower everyone goes. They make requests to a resource with a large number of computers, overwhelming the resource and making it run slower and slower until eventually, it goes offline entirely.
+
+Because an attacker must use a large number of computers, the attack is "distributed" accross multiple devices. The goal is to knock the resource offline so that it “denies service”; hence the name “distributed denial of service”.
+
+arge websites are equipped to handle thousands of visits per day, so it takes a lot of web traffic to overwhelm them. This traffic comes from botnets. Botnets are "robot networks" made up of computers infected by malware. These botnets can even include IoT devices. A single attacker can spread malware to many devices, and then use all of those devices in concert to act together, oftentimes without the victims ever knowing that their devices are infected.
+
+- Types of DDoS Attacks
+Different types of DDoS attacks target different network layers, spesifically, layers 3 (Network), 4 (Transport), and 7 (Application). Different DDoS attacks target different layers in different ways.
+
+Layer 7 (Application) can be attack using "HTTP Flooding". The attacker sends lots of HTTP requests. On the other hand, "SYN Flooding" targets the Transport layer by taking advantage of something called a TCP Handshake. Basically, it asks the server to wait for confirmation of a connection, but then never gives that confirmation.
+
+SYN Flooding is like a large group of people all asking the same person to hold something for them, but no one ever takes their item back, until the person holding everything eventually becomes overwhelmed.
+
+- Fighting DDoS
+Rate-limiting: limiting the number of requests a server will accept in a single time. CAPTCHAs can also provide some protection. It is difficult to guard against DDoS attacks. This is why websites seek protection from organizations such as Cloudflare, which provides protection against DDoS attacks by sitting between the server and the client, and forwarding legitimate traffic to the server while hiding malicious traffic.
