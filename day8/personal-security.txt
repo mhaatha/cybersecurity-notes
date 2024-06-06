@@ -1,0 +1,20 @@
+PERSONAL SECURITY BEST PRACTICE
+A great place to start applying your new knowledge of cybersecurity is to start with the security of your own accounts and devices!
+
+Account Safety & Password Management
+A study in February 2020 found that the average person has more than 70-80 passwords. Up to 65% of people reuse the same password for multiple accounts.
+
+- Don’t Reuse the Same Password for Many Sites
+By some metrics, 30,000 websites are hacked every day. When people hack into the website of a small company and steal the usernames and passwords of users, they are then able to use freely available credential stuffing tools to automatically try those username and password combinations across thousands of other sites. So it's important to use different password on different sites, if you do not do that, threat actors use usernames and passwords taken from one hacked site and try to use them on other sites hoping to find a match.
+try services such as https://haveibeenpwned.com/ that can tell you whether your email address has been involved in a data breach.
+
+- Use Strong Passwords or Passphrases
+The more characters, different capitalizations, special symbols a password has, the harder it is to “brute-force”. https://www.security.org/how-secure-is-my-password/ to check your password is strong or not.
+
+- Use a Password Manager
+A password manager is software that usually comes in a browser extension form, and it stores all of your passwords in encrypted form so that you don’t have to remember all of them individually. Instead, you only have to remember one master password.
+
+- Set Multi-Factor Authentication
+Make sure you use two-factor authentication (2FA) and multi-factor authentication (MFA) wherever and whenever possible. Every extra authentication step adds a layer of protection. At the very least, 2FA should be enabled for high-value accounts such as your bank account.
+
+

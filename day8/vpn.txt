@@ -1,0 +1,21 @@
+Virtual Private Networks (VPNs) are a pretty cool tool. With the click of a button, you can be browsing the Internet disguised as a device from Paris, or Beirut, or Kinshasa.
+
+VPNs provide two things: anonymity and security.
+
+If you're not using a VPN, your Internet Service Provider (ISP) can see everything you’re doing. They can see which websites you visit, the time you spend on them, what you do on them, the device you’re using, and where you are. They are also allowed to take that data and sell it.
+
+When not using a VPN, every website you visit, and sometimes people and websites you communicate with online, are able to see your IP Address and location by using beacons
+
+VPNs also add security. They can protect you from Man-In-The-Middle (MITM) Attacks, in which network traffic is intercepted by a malicious third party. When you use a VPN, it creates an encrypted tunnel between you and a remote server operated by your VPN provider. That prevents your ISP, others on your WiFi network, and websites from seeing what you’re doing. 
+
+- Messaging Security
+The encryption provided by certain messaging apps such as Signal, or email providers such as Protonmail or Tutanota can also help to keep you secure. 
+
+- Browser Security
+No matter what browser you are using, by always running the latest software available to you, you ensure that you are protected from the vast majority of attacks.
+
+- Keeping Software Up to Date
+Threat actors exploit vulnerabilities to gain unauthorized access to information, but by keeping yourself and your systems up to date you can make those vulnerabilities harder to exploit. Make sure that you are running the current version of your browser and operating system. Make sure to download new updates on your devices as well, since they often release specific patches for vulnerabilities.
+
+- Look out for Social Engineering
+The most secure system in the world is still vulnerable to human error and social engineering attacks such as phishing, which was a factor in 33% of data breaches in 2019. Making sure you know how to spot phishing, baiting, scareware and other social engineering attacks is as important as keeping your systems secure.
