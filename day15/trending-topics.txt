@@ -1,0 +1,30 @@
+TRENDING TOPICS IN CYBERSECURITY (2020s)
+Trending Topics in Cybersecurity (2020s)
+Emerging technologies create new questions for cybersecurity to answer and evolve around. Shake-ups to how organizations store their data digitally, the volume of content that is shared across the web, and more types of devices connected to the internet mean new types of vulnerabilities.
+
+- Cloud
+Cloud computing is now an essential solution to the question of scaling as the demand grows for remote collaboration and distributing data quicker to more places.
+
+The benefits of the cloud are that an organization’s data is centralized, the capacity for storage and content delivery is more flexible, and the physical management of the server is outsourced while improving reliability.
+
+Cloud security depends on shared responsibility between the cloud provider and an organization using the cloud (customer). Here’s how the responsibility is split, generally:
+- Provider Side: protecting and configuring the physical infrastructure, improving cloud network architecture, and ensuring the reliability of content delivery.
+- Customer Side: implementing access control, encryption of assets stored in the cloud, and ensuring compliance.
+
+Security professionals exist on either the provider side or the customer side, solving challenges in developing and maintaining cloud-based systems, as well as working out management and compliance.
+
+- 5G
+5G stands for the 5th Generation of standards for telecommunications. Like every new generation, connections between devices will become faster and more reliable. Objects connected to the Internet become even smarter. Communications become even more instantaneous. This will accelerate the evolution of things like:
+- Virtual and augmented reality.
+- The automation of industries like transportation (vehicle-to-everything connectivity), healthcare, manufacturing.
+- The monitoring of energy networks, agriculture, environment, etc.
+
+As 5G was built out, new security controls were also introduced. These include new authentication mechanisms, enhanced mobile security, more advanced encryption of communication, and even the possible elimination of physical SIM cards.
+
+- Internet of Things (IoT)
+The number of attacks using IoT devices as a vector is increasing. An attacker who can access your IoT devices can use the data those devices store for malicious purposes. They can also hijack these devices to use them as part of a botnet. IoT security is becoming more and more important.
+
+- Artificial intelligence
+Artificial intelligence (AI) has been a hot topic for a while — it is essentially the pursuit of computers and programs that can learn and make decisions the same way humans can. Using artificial intelligence, computers can process data relevant to security or threat intelligence at incredibly large volumes. These insights can then be used towards automating security actions!
+
+On the other hand, AI is also available to attackers who can collect and gain insights about a target and figure out the most opportune vector or time to attack. You can read up on the role of artificial intelligence in cybersecurity. https://www.balbix.com/insights/artificial-intelligence-in-cybersecurity/

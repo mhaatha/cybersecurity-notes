@@ -1,0 +1,58 @@
+LINUX HARDENING
+Linux at its most basic is a kernel; a low-level software interface between the hardware of a computer and higher-level software. The Linux kernel is not an operating system by itself but serves as a key building block for hundreds of different Linux distros (short for ‘distributions’): operating systems that are built on top of Linux.
+
+There is no definitive distro of Linux. Each distro has its own quirks, and the open nature of many of them means that new versions can be created at a rapid rate, fixing old security issues and creating new ones.
+
+Basic Linux Hardening Checklist
+- Take the time to research each change before implementing it! Understand the purpose of each change, and what effects it will have.
+
+Ensure root Account has a Strong Password
+The root account has the most privileges on a Linux system so it should be the most secure!
+
+Create User Accounts for Everyday Use
+While it may be tempting to always log in as the root user, doing so can make it easier for attackers to compromise a system. Instead, log in with a standard user account, and use the sudo command for specific command-line operations that require elevated permissions.
+
+Limit sudo Privileges
+This is a very powerful tool, and it can be very dangerous in the hands of attackers and inexperienced users. If an account doesn’t need to use sudo, make sure it can’t use sudo.
+
+Check Which Services are Running at Startup
+Make sure there aren’t any services running automatically that shouldn’t be.
+
+Uninstall Unused Software
+If you’re not using a piece of software, it’s generally a good idea to remove it.
+
+Intermediate Linux Hardening
+When making changes to the sudoers file:
+- NEVER use a standard text editor to edit the sudoers file.
+- ALWAYS use visudo to edit the sudoers file, as it prevents the file from being saved with invalid formatting.
+
+Limit sudo Access for Non-Administrator Accounts
+If a user needs sudo privileges for something specific, it’s possible to grant limited access to sudo for use with specific commands.
+
+Be aware that some programs can be used for what is known as privilege escalation, where a user is able to grant themselves additional permissions that they shouldn’t have. For example, allowing a user to run a terminal using sudo effectively allows them to run any program using sudo.
+
+Require Passwords for sudo Use
+Some distros are configured to have a set time limit on using sudo without re-entering the password. While convenient, this also opens up the possibility of an attacker waiting for you to use sudo, then taking advantage of that time period to run their own commands without authentication.
+
+Ensure System Updates are Applied Regularly
+Libre-software has a guide for setting up automatic software updates for Ubuntu. The guide is written for the server version of the distro, but it works for the desktop version as well.
+
+Ensure the SSH server is Disabled or Hardened
+SSH allows you to gain access to a remote computer running an SSH server, but, if you don’t need to do so, it’s best to just disable the SSH server. If you want to learn more about hardening SSH, Tecmint has a guide to hardening OpenSSH servers. https://www.tecmint.com/secure-openssh-server/
+
+Enforce Strong Passwords
+If you share your system with other people, it’s a good idea to enforce strong passwords for accounts. Linux Hint has a guide to enforcing password policies on Ubuntu using PAM. https://linuxhint.com/secure_password_policies_ubuntu/
+
+Enable System Startup Security
+Depending on when the hardware was issued, BIOS or UEFI is the first piece of software that runs when you start your computer. If it is tampered with, then all subsequent programs, such as the operating system, can be compromised.
+
+You can start by password-protecting the configuration, disabling unused hardware ports, and restricting devices the computer can boot from, and more.
+
+Encrypt System and User Files
+This generally needs to be set up when the OS is first installed, especially to use full-disk encryption. Encryption will cause a performance loss on most computers because the CPU has to spend time decrypting files, but helps secure the system against physical access.
+
+Harden Your Kernel
+The kernel is the core of the OS, and vulnerabilities within it can leave the whole OS open to attack. The kernel is updated regularly, so there aren’t likely to be any glaring flaws, but there may be ways you can further secure your kernel.
+
+Set Up the Firewall
+The Linux kernel has a built-in firewall, configured by the iptables program, but iptables has a reputation for being difficult to use. However, programs UFW (short for “Uncomplicated Firewall”) exist as a frontend for iptables, making it much easier to configure your firewall.

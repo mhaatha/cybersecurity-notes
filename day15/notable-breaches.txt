@@ -1,0 +1,36 @@
+CASE STUDIES: NOTABLE BREACHES
+1. Breach 1: Uber
+In late 2016, attackers used a password obtained in an unrelated data breach to gain access to an Uber engineer’s personal GitHub account. From this account, the attackers were able to access one of Uber’s internal repositories, which contained a private key used to access Uber’s datastores. These datastores contained unencrypted personal information for approximately 57 million Uber drivers and riders. The attackers downloaded copies of this private user information violating the information’s confidentiality. The attackers then contacted Uber, informed them that they had compromised Uber’s databases, and demanded a ransom to delete the stolen data.
+
+Uber was contacted by the attackers on November 14th, 2016, and Uber chose to pay the ransom. Uber had the attackers sign non-disclosure agreements regarding the stolen information.
+
+What Uber did not do, however, was disclose the breach. Uber was also under investigation at the time for a different breach that occurred in 2014. Uber didn’t disclose the breach until November 21, 2017, following the appointment of a new CEO. In addition to being highly unethical, Uber’s failure to disclose the breach was also illegal. In addition to the $100,000 ransom, Uber paid $148 million as part of the settlement.
+
+Lesson Learned
+- Failing to disclose breaches is unethical and illegal.Prompt disclosure is crucial to maintaining the trust of customers and complying with the law.
+- Mistakenly including keys or other sensitive data in source-control repositories is a common mistake with potentially serious repercussions.
+- Allowing access to internal resources with personal, external accounts is a security risk. Internal resources should be accessed using work accounts with strong security policies.
+- Don’t store private user information in an unencrypted format.
+
+2. Breach 2: Target
+In late November of 2013, attackers gained access to Target’s internal network using credentials stolen from a third-party vendor with network access. Improper network segmentation let the attackers gain access to Target’s point-of-sale (POS) system, which they installed malware onto. This malware stole the details of over 40 million credit cards used at Target’s stores, along with the personal information of over 70 million people. Target had antimalware software monitoring their system, but it was improperly monitored and configured. The software was not able to automatically remove the malware, and the alerts it raised went uninvestigated.
+
+Target discovered the breach on December 12th, 2013, and quickly responded, working with federal and private investigators to conduct a forensic investigation and remove the malware. While the breach was disclosed to card processors by the 16th, it was not disclosed to the public until the 18th when Brian Krebs, a security researcher, broke the story. In the aftermath of the breach, Target invested 100 million dollars into improving its cybersecurity and paid out an additional 18.5 million dollars in settlement costs.
+
+Lesson Learned
+- Promptly responding to breaches is crucial to maintain both legal compliance, and professional image.
+- Proper configuration is a requirement for security systems to be effective.
+- Conducting a proper investigation of security alerts is crucial to catching attacks before they get out of control. Improperly configured alerts, particularly high volumes of false alarms, can cause legitimate alerts to be ignored.
+- High-value targets should be hardened against attack. Target’s POS terminals were not hardened against tampering, allowing the attackers to violate their integrity and install malware.
+
+3. Breach 3: SolarWinds
+In September of 2019, a group of hackers covertly gained access to SolarWinds, a company that develops enterprise IT and cybersecurity software. The attackers tested and deployed Sunspot, a piece of custom malware, targeting Orion, one of SolarWinds’ products.
+
+Sunspot secretly added a backdoor to Orion, which was then digitally signed by SolarWinds’ update system which made it appear legitimate and pushed to customers through software updates. The backdoor allowed the attackers to install additional malware, known as Teardrop, onto the networks of SolarWinds customers, causing a massive breach of confidentiality and integrity.
+
+SolarWinds did not become aware of the attack until December of 2020 when FireEye, another cybersecurity company, discovered the backdoor while investigating how they themselves had been breached. In the ensuing investigation, it was determined that the attackers had used the backdoor to attack approximately 100 companies including Boeing and 9 federal agencies, including the United States Department of Defense and Justice Department. The attack has been publicly attributed to Russia by multiple United States government organizations, including the FBI and NSA. This attack is one of the largest and most serious cases of cyber-espionage in history.
+
+Lesson Learned
+- Organizations should know their threat landscape. Organizations that provide software, particularly to high-value targets such as Fortune 500 companies and government agencies, should consider themselves potential targets for APT groups.
+- Supply chain attacks are a real and serious threat, and organizations should be aware that the tools they use could become compromised.
+- Security needs to be proactive, in addition to reactive. Additional proactive security measures and investigation by SolarWinds might have caught the addition of malicious code to Orion sooner.
