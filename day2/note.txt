@@ -1,0 +1,37 @@
+WHAT IS CYBERCRIME?
+Cybercrime is any crime that makes use of or targets a computer.
+Cybercrime types:
+- Extortion: Commonly in the form of ransomware.
+- Fraud: Identity theft, scams, phishing, and more.
+- Theft: Stealing information, or theft of services and resources.
+
+WHAT IS DIGITAL FORENSICS?
+Digital Forensics is the process of gathering the evidence of a cybercrime in a way that the evidence can be used in a court of law. Including:
+- Disk Forensics: Investigating storage media.
+- Memory Forensics: Investigating live memory (RAM) on a digital device.
+- Network Forensics: Invetigating network traffic.	
+- Mobile Forensics: Investigating mobile devices.
+- Cloud Forensics: Investigating cloud environments.
+The most important aspect of digital forensics is maintaining a chain of custody to prove that the data and evidence have not been modified or tampered with.
+
+REGULATIONS
+ The Computer Fraud and Abuse Act (CFAA) is a US law that is used to prosecute cybercrime.
+The broad scope of the CFAA means that it is used to prosecute a wide variety of cybercrime, including:
+- Intrusion into networks and systems.
+- Malware attacks.
+- Theft of data and trade secrets.
+- Denial of service attacks (DoS).
+3 sets of regulations:
+- HIPAA (Health Insurance Portability and Accountability Act): is a U.S. federal law designed to modernize various aspects of healthcare and insurance. Protect PHI (Protected Health Information) from cybercrime.
+- GLBA (Gramm-Leach-Bliley Act): is a U.S. federal law governing financial institutions. Protect costumer information.
+- PCI DDS (Payment Card Industry Data Security Standard): is a regulation developed by credit card companies and governing merchants that handle credit card data.
+
+FRAMEWORK
+The NIST Framework is an optional framework published by NIST, originally developed to protect critical infrastructure in the US from cyber threats.
+The NIST framework consists of five main elements:
+- Identify: Identify and understand the threats and risks the organization is likely to face.
+- Protect: Protect the organization’s assets from those threats and risks.
+- Detect: Detect incidents, such as cyberattacks or other events.
+- Respond: Respond to incidents, preventing further damage.
+- Recover: Recover from incidents, evaluating how to prevent reoccurrence cleaning up any damage that occurred.
+Frameworks are not generally a one-size-fits-all solution to cybersecurity. Instead, they are a starting point for organizations to customize to their needs and threats.
