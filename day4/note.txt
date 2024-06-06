@@ -1,0 +1,16 @@
+PHISING
+Human within the system are still hackable. No matter what technical controls are in place to secure a system.
+Social Engineering is a practice of tricking humans to get important data or access.
+
+Method of phishing:
+- Vishing (voice phishing)
+- Smishing (SMS phishing)
+- Webpages
+- Spear Phishing is when an attacker has a spesific target in mind and sends that target a dedicated, personalized email. If the target is extremely sought after, like the CEO of a company, it is known as Whaling.
+
+Email Spoofing refers to when an attacker falsifies their email headers to make it appear as though the email is coming from someone else. Make sure to check the original code of the email.
+
+Typosquatting or URL hijacking is a form of cybersquatting targeting people that accidentally mistype a website address directly into their web browser URL field like codecademy.cm or codeoademy.com in the hopes that a user would accidentally type in the wrong domain.
+
+Use this tools (Passive DNS) to find real live phishing pages online: https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/infosec-guide-domain-monitoring-detecting-phishing-attacks
+Phishing examples: https://www.phishing.org/phishing-examples
