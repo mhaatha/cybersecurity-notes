@@ -1,0 +1,9 @@
+HISTORY OF CYBERSECURITY
+- Creeper and Reaper is the first computer worms (1970s).
+- Morris Worm (1980s).
+- Script Kiddies (1990s).
+- Cybercrime starts to attack companies (2000s).
+- Attacks by nation-states increased in frequency (2010s).
+- WannaCry and NotPetya (2017).
+
+Hacking is the act of working within the confines of a system to produce unintended behaviour.
