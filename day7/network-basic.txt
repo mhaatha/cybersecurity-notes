@@ -1,0 +1,17 @@
+INTRODUCTION TO NETWORK BASICS
+A network is two or more computers or devices that are linked in order to share information.
+
+TYPES OF NETWORKS
+Networks are broken into different subsets based on their size and function. Here are some of the most common network types:
+- LAN
+A Local Area Network is a smaller network that connects multiple devices in a limited area. Examples of LANs include small offices, a home, or any other network contained within a small area.
+
+- CAN
+A Campus Area Network connects multiple computers and devices over a slightly larger area. In many cases, these types of networks will connect multiple buildings located in the same vicinity.
+
+- WAN
+A Wide Area Network connects multiple computers over a geographically large area. Large, international organizations may operate these types of networks. To ensure that computers spread over large regions are able to communicate, companies may use a VPN (Virtual Private Network) to connect systems securely
+
+Since we’re all connected to the Internet, the whole Internet can technically be classified as a WAN!
+
+

@@ -1,0 +1,37 @@
+NETWORK TRAFFIC ANALYSIS (WIRESHARK)
+The key to network analysis is filtering out noise.
+
+- Filter for ARP
+ARP, also known as Address Resolution Protocol, is used to translate MAC addresses to IP addresses.
+
+- Filter for DNS
+1. With Wireshark still running, open a web browser and type in http://example.com.
+2. After you hit enter, go to Wireshark and type “dns” in the display filter section.
+3. Here, you’ll see various DNS requests from your computer. Find the request referencing example.com (You may need to scroll if your computer is generating a lot of requests). It should look similar to the sample below:
+278 6.630952 	192.168.1.226 	192.168.1.254 	DNS 	71 	Standard query 0x7dc8 A example.com
+
+1. Once you’ve found the packet, right-click on it, click “Follow”, and then click “UDP Stream”.
+
+This will focus in on our DNS requests and show us the raw format of the request in a new window (We can close this window).
+
+From this, we can see the domain name, example.com, points to the IP 93.184.216.34.
+Note: This value may change over time.
+
+- Filter for HTTP
+HTTP generally runs on TCP port 80. Let’s try to focus in on this traffic:
+1. While we could type “http” in the display filter, we’re going to use a slightly different filter. Since we know requests sent to “example.com” are sent over TCP port 80, let’s filter for that port.
+
+To do this, we’ll type “tcp.port == 80” and press ENTER. This will tell Wireshark to only display TCP connections destined for port 80.
+
+1. We want to focus in on the requests where the “Destination” is set to 93.184.216.34 or whatever IP we found in our earlier DNS request.
+2. If we want to drill down into these requests further, we can Right-Click the first packet with “GET / HTTP/1:1” in it. From here chose “Follow” and then “HTTP Stream.” This is very similar to what we did for our DNS requests.
+3. Once loaded, you’ll see a screen showing the HTTP request.
+HOST: example.com
+Connection: keep-alive
+
+...
+
+HTTP/1.1 200 OK
+Content Encoding: gzip
+Accept Ranges: bytes
+...

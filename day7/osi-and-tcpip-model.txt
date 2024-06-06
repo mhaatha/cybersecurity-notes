@@ -1,0 +1,49 @@
+OSI: NETWORK MODEL
+The OSI (Open Systems Interconnection) Model was developed in the 1970s and 1980s,  and it is a conceptual model that breaks networking into seven separate layers. OSI is used to help us categorize network processes so we can communicate about them during troubleshooting and while improving security.
+
+Layer 1 – Physical
+Layer 1 covers how unstructured data, like bits, is transmitted. Technology such as WiFi, Bluetooth, and cable standards such as CAT5 and CAT6 all operate at this layer. This layer also includes the hardware part of modems, adapters, and repeaters.
+
+Layer 2 – Data Link
+Layer 2 covers how data is sent from device to device when they are connected on the same local network.
+The data link layer includes many functionalities:
+- Data bits -> data frames.
+- It involves physical addresses of devices, called Media Access Control (MAC) address.
+- Routes data frames to the correct physical address.
+- Ensures the flow of data is synchronized between devices.
+- It detects errors within data frames. This involves a system of error control!
+
+Layer 3 – Network
+Layer 3 describes how data packets are routed between wider networks such as the Internet. A data packet at the network layer is routed from a source IP (Internet Protocol) address to a destination IP address.
+
+Layer 4 – Transport
+Layer 4 refers to how data is actually transferred. The most common transport protocols on the Internet are TCP (Transmission Control Protocol) and UDP (User Datagram Protocol).
+
+Layer 5 - Session
+Session is when two computers or devices have started an exchange of information. The session layer includes authentication and authorization measures.
+
+Layer 6 – Presentation
+Layer 6 includes all the methods that convert data into a format usable by an application. This layer handles functions such as encoding/decoding, encryption/decryption, and compression/decompression of files.
+
+Layer 7 - Application
+Layer 7 includes websites, browsers, email, mobile applications, and how they render Internet data so that we can interact with it.
+
+TCP/IP MODEL & IMPLEMENTATION
+You will hear more often about the TCP/IP model, which is a 4-layered model that makes direct reference to current Internet implementations. Its foundational protocols are TCP and IP.
+
+The four layers of TCP/IP are as follows:
+- Applicaton Layer
+This includes the opening and closing of sessions, translating data, and the interaction with content at the application level. Here, there are multiple protocols for web content, email, and accessing files, including HTTP, FTP, SMTP, and more.
+
+- Transport Layer
+TCP and UDP are the core protocols here.
+
+TCP is a connection-oriented protocol, where a more rigorous acknowledgment between one sender and one receiver must happen before any data can be sent. This protocol also includes flow control and error recovery, and it is used when larger amounts of data need to be sent and timing is less of a concern.
+
+UDP is a more lightweight protocol that does not require a fixed channel between a sender and receiver. It is often used when the amount of data sent is piecemeal and needs to be transmitted quickly.
+
+- The Internet Layer
+This is where IP addressing and routing occur.
+
+- Network Access Layer
+Sometimes called the Link layer, this layer encompasses the sending or receiving of network data at the local network level.

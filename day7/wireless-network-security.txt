@@ -1,0 +1,15 @@
+WIRELESS NETWORK SECURITY
+- Network Segmentation
+Network Segmentation is the basic practice of breaking apart larger networks into smaller, functionally similar networks with different access levels. This improves both security and performance.
+
+In segmenting networks, we should consider:
+- Which assets are we trying to protect?
+- Who can access which networks?
+
+- Access Point Placement
+Access points are the systems and nodes used to distribute wireless signals. If an attacker can access the network, they may be able to attack the users on the network!
+
+This risk is especially true in places like coffee shops or libraries. It would not be very wise to keep the router in plain sight so that anyone could physically configure it.
+
+- Encryption
+All wireless activity should be securely encrypted. Currently, the accepted standard for security is WPA2. WPA2-Personal will require a single password to access Wi-Fi, while WPA2-Enterprise will require multi-factor authentication.

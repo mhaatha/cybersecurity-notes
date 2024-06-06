@@ -1,0 +1,26 @@
+NETWORK PROTOCOLS: DNS, HTTP, EMAIL
+Network protocols are simply a set of standards for devices interacting on the internet.
+
+- DNS
+The Domain Name System (DNS) procotol converts domain names to IP addresses. When we request the URL codecademy.com, our computer sends a DNS request to a DNS server. The server then returns the correct IP addresses to route data to and from Codecademy.
+
+- HTTP
+The Hyper Text Transfer Protocol (HTTP) handles our web requests to servers. HTTP uses a set of verbs, like GET, POST, PUT, and HEAD, to retrieve and send data.
+
+- IMAP, POP & SMTP
+Internet Message Access Protocol (IMAP) & Post Office Protocol (POP) allow users to access emails stored on a remote web server. In IMAP, servers store your email and return copies to you, allowing you to access the same email on multiple devices. In POP3 (POP version 3), however, emails are generally downloaded from the server onto just a single device.
+
+To send email, the standard is SMTP (Simple Mail Transfer Protocol).
+
+NETWORK PROTOCOLS: SSH, SMB, FTP
+Below are some other Application-layer protocols that are more commonly used by IT professionals.
+
+- SSH
+Secure Shell (SSH) is used to access a remote terminal or virtual machine (VM) over a secure connection.
+
+- FTP
+File Transfer Protocol (FTP) is used to transfer files from one system to another. Modern implementations of FTP can include encryption as well.
+
+- SMB
+Server Message Block (SMB) protocol allows multiple users to interact with a remote system like a file share or printing services. Multiple people can view and modify shared resources and files in a centralized server.
+

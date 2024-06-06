@@ -1,0 +1,30 @@
+THINGS I DON'T KNOW WHEN I TRY TO SOLVE MCQ TEST IN https://www.sanfoundry.com/1000-cyber-security-questions-answers/
+
+1. The father of computer security is August Kerckhoffs. Kerckhoff had unwittingly established the foundations for contemporary encryption, earning him the title of “Father of Computer Security.”
+2. AES (Advanced Encryption Standard).
+3. William Gibson was coined the term "cyberspace".
+4. Pharming is the hacking approach where cyber-criminals design fake websites or pages for tricking or gaining additional traffic.
+5. Buffer-overflow attack is a type of cybersecurity exploit in which an attacker deliberately writes more data to a buffer (a temporary data storage area) than it can hold. This causes the buffer to overflow into adjacent memory, which can lead to unexpected behavior, crashes, or the execution of malicious code.
+6. Cyber attackers commonly target for fetching IP address of a target or victim user via websites.
+7. The term "hacker" was coined at MIT (Massachusetts Institute of Technology).
+8. Sendinc is a tool used to protect business email accounts and provides a fast web-based solution for businesses to start delivering secure emails.
+9. Wired Equivalent Privacy (WEP) is the least strong security encryption standard.
+10. Stuxnet is a popular and powerful worm that came into existence in mid 2010, it created to attack Iran's nuclear program.
+11. OS Fingerprinting is an ethical hacking technique used for determining what operating system (OS) is running on a remote computer.
+12. The term "hacking" was coined around 1955-1960.
+13. The first ever internationally recognized hacker’s conference took place in the year 1993 at Las Vegas, Nevada.
+14. DEFCON is the name of the first hacker's conference.
+15. Phreaking which is abbreviated as phone-hacking is a slang term and old hacking technique where skilled professionals study, explore & experiment telephone networks in order to acquire the free calling facility.
+16. The first hacking (related to telephone technology) was done when the phone company – named Bell Telephone started in the year 1878.
+17. In 1970 hacking became a practical crime and a matter of concern in the field of technology.
+18. In the year 1971, a Vietnam guy name John Draper figured it out as how to make phone calls free of cost. This type of phone hacking is termed Phreaking.
+19. The ARPANET (Advanced Research Project Agency Network) got hacked by Kevin Poulsen as he breaks into the Pentagon network and their associated system but got caught immediately in the year 1983.
+20. In 1978 computer scientists try to integrate encryption techniques in TCP/IP protocol.
+21. In 1984 Computer Fraud & Abuse Act was adopted in the United States.
+22. Robert Tappan Morris, a Cornell University graduate student developed Morris Worm in 1988 and was accused of the crime (under US Computer Fraud and Abuse Act.) for spreading computer worms through Internet.
+23. PGP (Pretty Good Privacy) is a powerful encryption tool released by Philip Zimmerman in the year 1991.
+24. Suicide Hackers are those who break into any network or system with or without knowing the consequences of the cyber crime and its penalty.
+25. Whistleblowers are those individuals who is a member or an employee of any specific organization and is responsible for disclosing private information of those organizations, firms, either government or private.
+26. Security Auditors are those who conduct auditing of various computer and network systems on an organization or company and reports the safety and security issues as well as helps in suggesting improvements or enhancements in any particular system that is threat prone.
+27. Security Architect are those senior grade employees of an organization who are in charge of building, designing, implementing and testing of secured network topologies, protocols as well as secured computers in an organization.
+28. Blue Hat Hackers are outsiders yet security testers who are temporarily hired for performing outsourced security test for bugs and vulnerabilities in any system before launching it to the market or making the application live.
