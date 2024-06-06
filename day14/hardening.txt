@@ -1,0 +1,22 @@
+PERSONAL SECURITY: HARDENING YOUR DEVICE
+- What is Hardening?
+Hardening is the process of fortifying a system against attacks. When we harden computers, we are generally focused on fortifying the operating system, making sure that it is as secure as it can be.
+
+If we had to communicate with the hardware directly, we would never get anything done! That’s why computer scientists and engineers created operating systems. Operating systems (OS for short) are pre-loaded sets of software that handle the details of keeping a computer running, provide services to applications, and make it easy for us to interact with our computers.
+
+If the hardware of a computer is its brain, the operating system is its consciousness and also its protection from cyber attacks.
+
+- A Balancing Act
+Hardening is a balancing act: too little of it, and the computer is vulnerable to attacks, but too much hardening can make a computer impractical to use. For example, keeping a computer off is a sure-fire way to prevent it from being remotely compromised, but also dramatically decreases its usability.
+
+Hardening often has trade-offs, analyze what threats you could likely face before determining what hardening is necessary to protect yourself and your assets.
+
+- Shared Personal Security Practices
+There are some shared practices between different types of devices. Some examples of shared practices might be:
+- Requiring Account Passwords
+- Limiting Administrator Access
+- Utilizing Firewalls
+- Using a Trustworthy Antivirus Software
+- Keeping Your System Up-to-Date
+
+Remember: malicious actors might try to trick you with fake security tips in order to gain access to your machine. Don't download the first antivirus you see a link for. Be vigilant and careful.
