@@ -1,0 +1,140 @@
+1. UNIX -> An operating system developed at AT&T Bell Labs in the 70s. Its development led to a standardization called POSIX.
+
+2. POSIX -> Portable Operating System Interface to ensure that different systems would be compatible with each other.
+
+3. In 1987 an OS called Minix was developed but redistribution of its code was restricted (NOT FOSS). This inspired a Finnish computer science student named <b>Linus Torvalds</b> to develop Linux in 1991.
+
+4. Linux is Free Open Source Software (FOSS) licence under GPL 2.0 (GNU General Public License).
+
+5. Kernel -> Linux is not an operating system but rather an operating system kernel. Written in the C programming language. Kernel is the black magic that sits between software and hardware.
+
+6. GRUB -> When you hit the power button on your computer, the boot loader or GRUB will load the Linux kernel into RAM. From there it detects hardware and starts the init system.
+
+7. Init -> A tool called systemd. Once initialized the kernel will start up applications in user space which will typically bring the user to a login screen.
+
+8. Memory management -> Kernel allocates and deallocates memory for processes and can even create virtual memory to use memory than is physically available by tapping into your hard drive.
+
+9. Virtual file system -> Kernel also provides a virtual file system to interact with files on different systems.
+
+10. ext4 -> The fourth extended file system is the most common default on Linux but it's not the only option.
+
+11. drivers -> The kernel also interacts with all these peripheral devices via drivers
+
+12. Protection ring -> You can't just walk up and mess around with the kernel and that's because it's surrounded by the cpu's protection ring. At ring 0 we have the kernel with the highest level of privilege. While most of us normies in user space living in ring 3 with the lowest level of privilege.
+
+13. syscalls -> You can do something that requires access to the kernel, like write a file to the file system. Here are C code which will transition from ring 3 to ring 0:
+
+const char* message = "Hi syscall!\n";
+ssize_t bytes_written = write(1, message, 16);
+
+write itself is not a system call, it's actually a wrapper provided by glibc.
+
+14. glibc -> The GNU Standard Library for C and provides all kinds of wrappers for making system calls that can do almost anything on your OS.
+
+15 GNU -> A project that predates the Linux kernel itself and was started all the way back in 1983 by Richard Stallman.
+
+16. coreutils -> GNU provides all the core utilities for Linux which are all the software utilities that make the kernel useful to humans.
+
+17. terminal -> The best way to start exploring these core libs is to open up the terminal which is a GUI that allows you to send commands via the shell.
+
+18. shell -> They call this thing a shell because it provides a layer of protection between user space and the kernel. There are many different flavors of shells but the most common is Bash.
+
+19. echo -> GNU shell utility to say hello to the Linux kernel by providing a string argument to it. This command takes out message and prints it to the standard output (stdout).
+ 
+20. touch -> Used to create a new file.
+
+21. ls -> List out the files in this directory.
+
+22. cat -> And you can read the file contents with the cat command.
+
+23. stat -> Timestamps that we can access and rhymes with cat and when we run it we know this file's birth time, when it was modified and when it was last accessed.
+
+24. flags -> We can also get more information from the ls command by appending flags to it. ls -l -h it means l flag is to list more details, and the h flag is to make them human readable.
+
+25. Combined flags -> We can also combine flags in Linux to make this command more concise.
+
+26. rm -> Remove file.
+ 
+27. output redirection -> You can echo and use this angle bracket to redirect its ouput to a new file: echo "hi mom!" > new_file.txt
+
+28. input redirection -> You can flip this angle bracket around to also redirect the input of a file: echo "$(< new_file.txt)"
+
+29. pipes -> Allows you to take the output of one command and pass it off to another command. Example: If we have a log file of our broken code we might first use cat to read that file. But then we could pipe the output to sort which would sort it line by line and then uniq to remove any duplicates -> cat error.log | sort | uniq
+
+30. bash script -> A file containing a sequence of commands that are executed by the bash program line by line.
+
+31. #! shebang -> #!/bin/bash that tells Linux to use the bash interpreter.
+
+32. stdin -> standard input
+
+33. whoami -> It's going to return your Linux username.
+
+34. uid -> Every user has a unique uid that can be viewed with the id command.
+
+35. root -> aka admin super user with uid 0. Root has the highest level of privilege and you can switch to the root user with the su (substitute user) command or prefix any command with sudo (superuser do) to run it with elevated privilege.
+
+36. groups -> Make it easier to manage permissions for multiple users.
+
+37. file system -> By default we're in our /home directory, which is like a personal workspace for the user you're logged in as.
+
+38. mkdir -> Make directory.
+
+39. cd -> Change directory.
+
+40. pwd -> Print working directory.
+
+41. / -> Root of the file system.
+
+42. /boot -> Contains the Linux kernel itself.
+
+43. /dev -> Contains external devices like hard drives.
+
+44. /etc -> Contains config files.
+
+45. /var -> Contains log files.
+
+46. /bin -> Which holds your binaries.
+
+47. /sbin -> System binaries. When you run command like ls, Linux looks for an executable binary on your system to execute. The thing is binaries not only live here but also under the user system resources directory.
+
+48. /usr -> User System Resources. 
+
+49. PATH -> How does Linux know where to find the right binary. It's a special environment variable that contains paths to directories seperated by colons. When you enter a command Linux will search through the path for a matching binary in each directory and execute the first one it finds.
+
+50. export -> It's common to customize PATH using the export keyword: export PATH=some-dir/bin:$PATH which will set the value for an environment variable.
+
+51. File permissions -> Use ls -l on any file to view permissions and notice these crypthic nine characters -rw-r--r-- these are called symbolic permissions. 
+
+52. Symbolic permissions -> The first triplet represents the owner, the middle the group, and the last triplet is for anyone else.
+
+53. read, write, execute -> If the letter is present to symbolic permissions, it means access granted, but if there's a dash it means permission denied.  
+
+54. Octal permissions -> 777 lets anybody to anything to a file. It's a bad idea because you want to always follow the principle of lease privilege.
+
+55. Principle of least privilege -> Grants access to things only when necessary and trust no one.
+
+56. chmod -> You can modify the permissions on a file. chmod[u/g/o]user,group,others[+/-/=]add,remove,set[file]
+
+57. chown -> Change the owner of a file.
+
+58. chgrp -> Assign group.
+
+59. ps -> Anytime you run a command or execute a program it creates a process on the CPU which is managed by the Linux kernel. You can view these processes with a ps command and notice how each one has a unique process id (PID) along with the user who created it.
+
+60. htop -> Or better yet use htop to get an interactive breakdown of processes that can be filtered. 
+
+61. daemon -> Run system in the background. If you have a long running script you can even create your own background process by adding an amper sand to the end of it: ./my_long_script.sh & 
+
+62. crontab -> Or if you want a script run on a spesific schedule, like a reminder to do something at 4:20 p.m. today, you can accomplish that by adding your script to the crontab.
+
+63. grep -> For searching through text.
+
+64. sed -> For modifying text.
+
+65. gzip -> For making files smaller.
+
+66. tar -> For archiving directories. 
+
+67. distro -> Linux distribution is just a complete operating system built on the Linux kernel. And each distro has a highly opinionated set of default software for their target audience. Some are design for beginners, others for hardcore hackers and everything in between.
+
+68. Package manager -> Each distro can have different package managers to install new software like apt, yum, dnf, and pacman.
