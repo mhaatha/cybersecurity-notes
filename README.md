@@ -25,12 +25,12 @@
 
 **Log Tampering** -> Tindakan mengubah, menghapus atau memalsukan data log secara ilegal dengan tujuan menyembunyikan jejak aktivitas jahat agar tidak terdeteksi oleh tim keamanan.
 
-##### DNS Attacks
+## DNS Attacks
 **DNS Spoofing** -> Istilah umum untuk **memalsukan respons DNS** agar korban menerima alamat IP yang salah. Yang penting korban menerima respons DNS palsu tanpa mempedulikan bagaimana caranya.
 **DNS Cache Poisoning** ->  Jenis khusus dari DNS Spoofing yang menargetkan **cache DNS resolver**. Teknik ini membuat cache DNS terinfeksi sehingga respons palsu akan terus diberikan sampai cache tersebut expired.
 **DNS Poisoning** -> Istilah ini digunakan untuk menyebut segala bentuk manipulasi data pada DNS, termasuk **DNS Cache Poisoning** dan **DNS Spoofing**.
 
-##### Brute Force Types
+## Brute Force Types
 A Brute Force attack will take a list of possible inputs, and try each of them against the server looking for positive responses. The success or failure of the attack will depend on the list of inputs supplied to the brute forcer.
 **Simple Brute Force** -> Try every possible combination of input characters until we get a result. Useful for guessing simple or short passwords, but with longer items can take a long time.
 **Dictionary Based Attacks** -> Here we build a list of possible inputs then work through the list using each item as input.
@@ -40,7 +40,7 @@ A Brute Force attack will take a list of possible inputs, and try each of them a
 
 **Fuzzing** -> Mencoba input acak dengan tujuan untuk membuat sistem crash atau untuk mencari kerentanan pada sistem berdasarkan output yang dihasilkan. Fuzzing memiliki dua kegunaan utama: **Identifying Edge Cases where the System Breaks** and **Learning More about how a system handles data**
 
-##### Malware
+## Malware
 **Malware** -> Malicious Software. Istilah umum untuk semua jenis program yang merusak, menyusup, atau menyalahgunakan komputer korban.
 **Virus** -> Nempel di file atau program dan menyebar atau menyalin dirinya ketika file atau program tersebut dijalankan. Efeknya data rusak, sistem berjalan lambat, bahkan sampai tidak bisa dipakai.
 **Worm** -> Bisa nyebar sendiri tanpa bantuan manusia. Dapat menyusup melalui celah keamanan di sistem, software, OS, bahkan flashdisk yang terinfeksi. Bisa nyolong data dan koneksi internet jadi lambat.
@@ -62,15 +62,10 @@ A Brute Force attack will take a list of possible inputs, and try each of them a
 **Fileless Malware** -> Tidak meninggalkan jejak di harddrive, langsung jalan di RAM sehingga ketika komputer direstart, malware tersebut akan langsung hilang.
 **Malicious Macro** -> Skrip jahat yang diselipin di dokumen Word atau Excel.
 
-##### Tools
+## Tools
 **Nikto** -> Web server scanner, used to identify vulnerabilities - like outdated software, dangerous files, and potential misconfigurations.
 **Nessus** -> Vulnerability scanning tool that scans for security vulnerabilities in devices, applications, operating systems, cloud services, and other network resources. Berbeda dengan Nikto yang khusus untuk web server, Nessus mencakup seluruh infrastruktur jaringan.
 **Wireshark** -> Network packet analyzer. It presents captured packet data in as much detail as possible.
 **Nmap** -> Used for network discovery, scanning and security auditing. It helps identify hosts, open ports, running services, operating systems and potential vulnerabilities.
 **Metasploit** -> Exploitation Framework that contains group of tools and utilities put together to make exploit development, system administration, and honing stuff.
 **Cain and Abel (DEPRECATED / NOT USED ANYMORE)** -> Password recovery tool for Windows. It could recover many kinds of passwords using methods such as network packet sniffing, cracking various password hashes by using methods such as dictionary attacks, brute force and cryptanalysis attacks.
-
-
-# References
-https://www.sanfoundry.com/1000-cyber-security-questions-answers/
-https://wayground.com/activity/admin/quiz/6a2cf7292f37dfe477ed988c/simulasi-penyisihan-kmipn-5
